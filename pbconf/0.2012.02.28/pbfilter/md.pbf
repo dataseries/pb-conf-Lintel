@@ -1,0 +1,8 @@
+# Specific group for Mandriva for Lintel
+# Cf: http://wiki.mandriva.com/en/Development/Packaging/Groups
+#filter PBGRP = Archiving/Backup
+
+# PBLIC is replaced by the license of the application
+# Cf: http://wiki.mandriva.com/en/Development/Packaging/Licenses
+#filter PBLIC = GPL
+

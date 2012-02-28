@@ -1,0 +1,21 @@
+#
+# $Id$
+#
+# Filter for debian build
+#
+# PBGRP is replaced by the group of apps
+filter PBGRP = utils
+
+# PBLIC is replaced by the license of the application
+# Cf: http://www.debian.org/legal/licenses/
+#filter PBLIC = GPL
+
+# PBDEP is replaced by the list of dependencies
+#filter PBDEP =
+
+# PBSUG is replaced by the list of suggestions
+#filter PBSUG =
+
+# PBREC is replaced by the list of recommandations
+#filter PBREC =
+
