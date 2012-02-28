@@ -8,7 +8,7 @@
 filter PBREPO = $pb->{'repo'}
 
 # PBSRC is replaced by the source package location after the repo
-#filter PBSRC = src/%{name}-%{version}.tar.gz
+filter PBSRC = http://tesla.hpl.hp.com/opensource/sources/%{name}-%{version}.tar.gz
 # Used if virtual name != real name (perl, ...)
 #filter PBSRC = src/%{srcname}-%{version}.tar.gz
 
@@ -46,15 +46,15 @@ filter PBPROJ = $pb->{'proj'}
 filter PBPACKAGER = $pb->{'packager'}
 
 # PBDESC contains the description of the package
-#filter PBDESC = Bla-Bla
+filter PBDESC = Lintel description ....
 
 # PBSUMMARY contains a short single line description of the package
-#filter PBSUMMARY = Bla
+filter PBSUMMARY = Lintel summary ...
 
 # PBURL contains the URL of the Web site of the project
-#filter PBURL = http://www.Lintel.org
+filter PBURL = http://tesla.hpl.hp.com/opensource/
 
 # PBLOG is replaced by the changelog if value is yes
 # and should be last as when used we need the %pb hash filled
-#filter PBLOG = yes
+filter PBLOG = no
 
