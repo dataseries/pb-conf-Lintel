@@ -15,21 +15,22 @@
 #pburl Lintel = ftp://ftp.Lintel.org/src/Lintel-devel.tar.gz
 #pburl Lintel = file:///src/Lintel-devel.tar.gz
 #pburl Lintel = dir:///src/Lintel-devel
+pburl Lintel = file:///home/anderse/Lintel-0.2012.02.28.tar.gz
 
 # Repository
-#pbrepo Lintel = ftp://ftp.Lintel.org
+pbrepo Lintel = http://tesla.hpl.hp.com/opensource
 #pbml Lintel = Lintel-announce@lists.Lintel.org
 #pbsmtp Lintel = localhost
 
 # Check whether project is well formed 
 # when downloading from ftp/http/...
 # (containing already a directory with the project-version name)
-#pbwf Lintel = 1
+pbwf Lintel = 1
 
 #
 # Packager label
 #
-#pbpackager Lintel = William Porte <bill@Lintel.org>
+pbpackager Lintel = Eric Anderson <eric.anderson4@hp.com>
 #
 
 # For delivery to a machine by SSH (potentially the FTP server)
@@ -49,11 +50,12 @@
 # a QEMU rhel-3-i286 here means that the VM will be named rhel-3-i386.qemu
 #
 #vmlist Lintel = mandrake-10.1-i386,mandrake-10.2-i386,mandriva-2006.0-i386,mandriva-2007.0-i386,mandriva-2007.1-i386,mandriva-2008.0-i386,redhat-7.3-i386,redhat-9-i386,fedora-4-i386,fedora-5-i386,fedora-6-i386,fedora-7-i386,fedora-8-i386,rhel-3-i386,rhel-4-i386,rhel-5-i386,suse-10.0-i386,suse-10.1-i386,suse-10.2-i386,suse-10.3-i386,sles-9-i386,sles-10-i386,gentoo-nover-i386,debian-3.1-i386,debian-4.0-i386,ubuntu-6.06-i386,ubuntu-7.04-i386,ubuntu-7.10-i386,mandriva-2007.0-x86_64,mandriva-2007.1-x86_64,mandriva-2008.0-x86_64,fedora-6-x86_64,fedora-7-x86_64,fedora-8-x86_64,rhel-4-x86_64,rhel-5-x86_64,suse-10.2-x86_64,suse-10.3-x86_64,sles-10-x86_64,gentoo-nover-x86_64,debian-4.0-x86_64,ubuntu-7.04-x86_64,ubuntu-7.10-x86_64,solaris-10-x86_64
+vmlist=debian-6.0-x86_64
 
 #
 # Valid values for vmtype are
 # qemu, (vmware, xen, ... TBD)
-#vmtype Lintel = qemu
+# vmtype Lintel = qemu
 
 # Hash for VM stuff on vmtype
 #vmntp default = pool.ntp.org
@@ -92,8 +94,8 @@
 #
 # Global version/tag for the project
 #
-#projver Lintel = devel
-#projtag Lintel = 1
+projver Lintel = 0.2012.02.28
+projtag Lintel = 1
 
 # Hash of valid version names
 
@@ -117,7 +119,7 @@ delivery Lintel = test
 #pkgver Lintel = stable
 #pkgtag Lintel = 3
 # Hash of default package/package directory
-#defpkgdir Lintel = dir-Lintel
+defpkgdir Lintel = Lintel-0.2012.02.28
 # Hash of additional package/package directory
 #extpkgdir minor-pkg = dir-minor-pkg
 
