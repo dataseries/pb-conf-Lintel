@@ -15,7 +15,7 @@
 #pburl Lintel = ftp://ftp.Lintel.org/src/Lintel-devel.tar.gz
 #pburl Lintel = file:///src/Lintel-devel.tar.gz
 #pburl Lintel = dir:///src/Lintel-devel
-pburl Lintel = file:///home/anderse/Lintel-0.2012.02.28.tar.gz
+pburl Lintel = file:///home/anderse/projects/Lintel-0.2012.02.28.tar.gz
 
 # Repository
 pbrepo Lintel = http://tesla.hpl.hp.com/opensource
@@ -51,7 +51,7 @@ pbpackager Lintel = Eric Anderson <eric.anderson4@hp.com>
 #
 #vmlist Lintel = mandrake-10.1-i386,mandrake-10.2-i386,mandriva-2006.0-i386,mandriva-2007.0-i386,mandriva-2007.1-i386,mandriva-2008.0-i386,redhat-7.3-i386,redhat-9-i386,fedora-4-i386,fedora-5-i386,fedora-6-i386,fedora-7-i386,fedora-8-i386,rhel-3-i386,rhel-4-i386,rhel-5-i386,suse-10.0-i386,suse-10.1-i386,suse-10.2-i386,suse-10.3-i386,sles-9-i386,sles-10-i386,gentoo-nover-i386,debian-3.1-i386,debian-4.0-i386,ubuntu-6.06-i386,ubuntu-7.04-i386,ubuntu-7.10-i386,mandriva-2007.0-x86_64,mandriva-2007.1-x86_64,mandriva-2008.0-x86_64,fedora-6-x86_64,fedora-7-x86_64,fedora-8-x86_64,rhel-4-x86_64,rhel-5-x86_64,suse-10.2-x86_64,suse-10.3-x86_64,sles-10-x86_64,gentoo-nover-x86_64,debian-4.0-x86_64,ubuntu-7.04-x86_64,ubuntu-7.10-x86_64,solaris-10-x86_64
 #vmlist=debian-6.0-x86_64
-vmlist=centos-5-i386
+vmlist Lintel = centos-5-i386
 
 #
 # Valid values for vmtype are
@@ -88,7 +88,7 @@ vmlist=centos-5-i386
 #vetype Lintel = chroot
 #ventp default = pool.ntp.org
 #velogin Lintel = pb
-#vepath Lintel = /var/cache/rpmbootstrap
+# vepath Lintel = /var/cache/rpmbootstrap
 #rbsconf Lintel = /etc/mock
 #verebuild Lintel = false
 
@@ -106,9 +106,9 @@ projtag Lintel = 1
 #version Lintel = devel,stable
 
 # Is it a test version or a production version
-testver Lintel = true
+testver Lintel = false
 # Which upper target dir for delivery
-delivery Lintel = test
+delivery Lintel = production
 
 # Additional repository to add at build time
 # addrepo centos-5-x86_64 = http://packages.sw.be/rpmforge-release/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm,ftp://ftp.project-builder.org/centos/5/pb.repo
@@ -133,3 +133,6 @@ defpkgdir Lintel = Lintel-0.2012.02.28
 # Here perl-xxx for RPMs, libxxx-perl for debs, ...
 # So the package name is indeed virtual
 #namingtype Lintel = perl
+
+sshhost Lintel = foo.example.org
+
