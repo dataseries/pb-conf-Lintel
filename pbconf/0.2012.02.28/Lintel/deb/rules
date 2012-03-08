@@ -20,7 +20,7 @@ build: build-stamp
 build-stamp:  debian/build/config-stamp
 	dh_testdir
 
-	(cd debian/build && $(MAKE) -j5)
+	# (cd debian/build && $(MAKE) -j5)
 	#(cd debian/build && ctest)
 
 	touch $@
@@ -42,11 +42,13 @@ install: build
 	dh_prep || dh_clean -k
 	dh_installdirs
 
-	(cd debian/build && $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install)
+	# (cd debian/build && $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install)
 	mkdir -p $(TMP_USR)/share/doc/Lintel
 	cp -p Release.info ChangeLog $(TMP_USR)/share/doc/Lintel
-	./dist/fix-install.sh $(CURDIR)/debian/tmp
-
+	# ./dist/fix-install.sh $(CURDIR)/debian/tmp
+	mkdir -p $(TMP_USR)/share/doc/Lintel/html
+	touch $(TMP_USR)/share/doc/Lintel/html/index.html
+	touch $(TMP_USR)/share/doc/Lintel/html/foo.html
 
 # Build architecture-independent files here.
 binary-indep: build install
@@ -89,7 +91,7 @@ binary-arch: build install
 	dh_installdocs -a
 	dh_installexamples -a
 	# TODO: remove once we are at debhelper compat level 7
-	dh_install -a --sourcedir=debian/tmp 
+	# ERIC: fast-build dh_install -a --sourcedir=debian/tmp 
 #	dh_installmenu
 #	dh_installdebconf	
 #	dh_installlogrotate

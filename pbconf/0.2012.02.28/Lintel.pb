@@ -134,5 +134,5 @@ defpkgdir Lintel = Lintel-0.2012.02.28
 # So the package name is indeed virtual
 #namingtype Lintel = perl
 
-sshhost Lintel = foo.example.org
-
+sshhost Lintel = localhost
+sshdir Lintel = /home/anderse/cache-project-builder/repos
