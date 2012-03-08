@@ -3,6 +3,9 @@
 #
 # Filter for debian build
 #
+# PBDEBSTD is replaced by the Debian standard version
+filter PBDEBSTD = 3.9.1
+
 # PBGRP is replaced by the group of apps
 filter PBGRP = utils
 
