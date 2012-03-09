@@ -82,7 +82,7 @@ vmlist Lintel = centos-5-i386
 # a .vetype extension will be added to the resulting string
 # a chroot rhel-3-i286 here means that the VE will be named rhel-3-i386.chroot
 #
-#velist Lintel = fedora-7-i386
+velist Lintel = debian-6.0-i386,debian-6.0-x86_64,debian-7.0-i386,debian-7.0-x86_64
 
 # VE params
 #vetype Lintel = chroot

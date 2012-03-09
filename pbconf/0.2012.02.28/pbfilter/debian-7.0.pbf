@@ -9,4 +9,4 @@ filter PBDEBCOMP = 7
 
 filter PBBOOST = libboost-dev, libboost-thread-dev, libboost-program-options-dev
 filter PBTEX = texlive-binaries
-filter PB_LIBDIGEST_SHA_PERL = perl
+filter PB_LIBDIGEST_SHA_PERL = libdigest-sha-perl
