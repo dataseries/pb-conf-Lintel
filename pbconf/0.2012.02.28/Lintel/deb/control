@@ -18,23 +18,13 @@ Package: liblintel0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Miscellaneous utility library - base C++ library
- Lintel is the miscellaneous utility library for shared functions that are
- individually valuable but are not valueable enough to form their own package.
- It includes code for statistics, hashing, pointer utilities, assertions, etc.
- This package contains the base lintel shared library, and it will normally only
- be installed as a dependency from some other package.
+Description: PBDESC_liblintel
 
 Package: liblintelpthread0
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, liblintel0
-Description: Miscellaneous utility library - pthread C++ library
- This is the pthread specific portion of the lintel library.  This library is
- separated out from the standard lintel code so that libraries that do not link
- with libpthread can avoid the overhead associated with pthreads.  This package
- should probably be only installed as part of a dependency from some other
- package.
+Description: PBDESC_liblintelpthread
 
 # TODO-package-reviewer: Should deptool be part of liblintel-dev?  It's used to 
 # build packages and their dependencies, and handle checkout/checkin/etc; so it's
@@ -44,24 +34,14 @@ Section: utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, liblintel0, liblintel-perl,
   texlive-latex-base, ghostscript, PB_LIBDIGEST_SHA_PERL
-Description: Miscellaneous utility library - programs
- Lintel is the miscellaneous utility library for shared functions that are
- individually valuable but are not valueable enough to form their own package.
- This package contains the various lintel utilities to calculate random
- numbers, build software with inter-checkout dependencies, graph and plot data,
- lock a file while running a command, run a set of related commands in
- parallel, manage a large collection of JBOD disks, and rebuild LaTeX files.
+Description: PBDESC_lintel_utils
 
 Package: liblintel-dev-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: liblintel-dev
-Description: Documentation for liblintel-dev
- This package contains all of the documentation for liblintel-dev, mostly the 
- auto-generated doxygen documentation.  This package is only useful if you have
- already installed liblintel-dev since without that package, the documentation 
- in this one covers nothing that is installed.
+Description: PBDESC_liblintel_dev_doc
 
 Package: liblintel-dev
 Section: libdevel
@@ -73,11 +53,7 @@ Depends: liblintel0 (= ${binary:Version}), liblintelpthread0 (= ${binary:Version
     | libboost-program-options1.42-dev,
   libboost-thread-dev | libboost-thread1.35-dev | libboost-thread1.42-dev
 Recommends: liblintel-dev-doc
-Description: Miscellaneous utility library - development code
- Lintel is the miscellaneous utility library for shared functions that are
- individually valuable but are not valueable enough to form their own package.
- It includes code for statistics, hashing, pointer utilities, assertions, etc.
- This package include all of the includes necessary to develop with libLintel.
+Description: PBDESC_liblintel_dev
 
 # TODO-package-reviewer: is the below correct?
 # Looks like the convention is to not have the perl libraries versioned.  We could split out
@@ -86,10 +62,4 @@ Package: liblintel-perl
 Section: perl
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}
-Description: Miscellaneous utility library - perl library and modules
- This is the perl specific portion of the lintel library.  It includes 
- modules for expanding out integers, the modules for plotting and locking
- files.  A wrapper around DBI to simplify usage, a module for interacting
- with ssh known hosts files, and a module for managing sub-processes.
- It also includes that module to interact with a subset of libLintel from
- perl.
+Description: PBDESC_liblintel_perl

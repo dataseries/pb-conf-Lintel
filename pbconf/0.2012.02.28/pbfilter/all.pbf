@@ -45,9 +45,6 @@ filter PBPROJ = $pb->{'proj'}
 # PBPACKAGER is replaced by the packager name ($pb->{'packager'} in code)
 filter PBPACKAGER = $pb->{'packager'}
 
-# PBDESC contains the description of the package
-filter PBDESC = Lintel description ....
-
 # PBSUMMARY contains a short single line description of the package
 filter PBSUMMARY = Lintel summary ...
 
@@ -57,4 +54,46 @@ filter PBURL = http://tesla.hpl.hp.com/opensource/
 # PBLOG is replaced by the changelog if value is yes
 # and should be last as when used we need the %pb hash filled
 filter PBLOG = no
+
+filter PBDESC_liblintel_raw = Miscellaneous utility library - base C++ library    \
+ Lintel is the miscellaneous utility library for shared functions that are        \
+ individually valuable but are not valueable enough to form their own package.    \
+ It includes code for statistics, hashing, pointer utilities, assertions, etc.    \
+ This package contains the base lintel shared library, and it will normally only  \
+ be installed as a dependency from some other package.
+
+filter PBDESC_liblintelpthread_raw = Miscellaneous utility library - pthread C++ library \
+ This is the pthread specific portion of the lintel library.  This library is            \
+ separated out from the standard lintel code so that libraries that do not link          \
+ with libpthread can avoid the overhead associated with pthreads.  This package          \
+ should probably be only installed as part of a dependency from some other               \
+ package.
+
+filter PBDESC_lintel_utils_raw = Miscellaneous utility library - programs        \
+ Lintel is the miscellaneous utility library for shared functions that are       \
+ individually valuable but are not valueable enough to form their own package.   \
+ This package contains the various lintel utilities to calculate random          \
+ numbers, build software with inter-checkout dependencies, graph and plot data,  \
+ lock a file while running a command, run a set of related commands in           \
+ parallel, manage a large collection of JBOD disks, and rebuild LaTeX files.
+
+filter PBDESC_liblintel_dev_doc_raw = Documentation for liblintel-dev            \
+ This package contains all of the documentation for liblintel-dev, mostly the    \
+ auto-generated doxygen documentation.  This package is only useful if you have  \
+ already installed liblintel-dev since without that package, the documentation   \
+ in this one covers nothing that is installed.
+
+filter PBDESC_liblintel_dev_raw = Miscellaneous utility library - development code   \
+ Lintel is the miscellaneous utility library for shared functions that are           \
+ individually valuable but are not valueable enough to form their own package.       \
+ It includes code for statistics, hashing, pointer utilities, assertions, etc.       \
+ This package include all of the includes necessary to develop with libLintel.
+
+filter PBDESC_liblintel_perl_raw = Miscellaneous utility library - perl library and modules \
+ This is the perl specific portion of the lintel library.  It includes                      \
+ modules for expanding out integers, the modules for plotting and locking                   \
+ files.  A wrapper around DBI to simplify usage, a module for interacting                   \
+ with ssh known hosts files, and a module for managing sub-processes.                       \
+ It also includes that module to interact with a subset of libLintel from                   \
+ perl.
 

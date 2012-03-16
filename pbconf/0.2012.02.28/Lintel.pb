@@ -82,7 +82,7 @@ vmlist Lintel = centos-5-i386
 # a .vetype extension will be added to the resulting string
 # a chroot rhel-3-i286 here means that the VE will be named rhel-3-i386.chroot
 #
-velist Lintel = debian-6.0-i386,debian-6.0-x86_64,debian-7.0-i386,debian-7.0-x86_64,ubuntu-8.04-i386,ubuntu-8.04-x86_64,ubuntu-11.10-i386,ubuntu-11.10-x86_64
+velist Lintel = centos-5-i386,centos-5-x86_64,debian-6.0-i386,debian-6.0-x86_64,debian-7.0-i386,debian-7.0-x86_64,ubuntu-8.04-i386,ubuntu-8.04-x86_64,ubuntu-11.10-i386,ubuntu-11.10-x86_64
 
 # VE params
 #vetype Lintel = chroot
@@ -112,6 +112,8 @@ testver Lintel = false
 delivery Lintel = production
 
 # Additional repository to add at build time
+addrepo centos-5-i386 = http://mirror.centos.org/centos/5/extras/i386/RPMS/chrpath-0.13-3.el5.centos.i386.rpm
+addrepo centos-5-x86_64 = http://mirror.centos.org/centos/5/extras/x86_64/RPMS/chrpath-0.13-3.el5.centos.x86_64.rpm
 # addrepo centos-5-x86_64 = http://packages.sw.be/rpmforge-release/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm,ftp://ftp.project-builder.org/centos/5/pb.repo
 # addrepo centos-4-x86_64 = http://packages.sw.be/rpmforge-release/rpmforge-release-0.3.6-1.el4.rf.x86_64.rpm,ftp://ftp.project-builder.org/centos/4/pb.repo
 

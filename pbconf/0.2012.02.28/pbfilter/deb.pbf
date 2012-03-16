@@ -22,3 +22,9 @@ filter PBGRP = utils
 # PBREC is replaced by the list of recommandations
 #filter PBREC =
 
+transform PBDESC_liblintel = PBDESC_liblintel_raw s/\s+\n/\n/go;
+transform PBDESC_liblintelpthread = PBDESC_liblintelpthread_raw s/\s+\n/\n/go;
+transform PBDESC_lintel_utils = PBDESC_lintel_utils_raw s/\s+\n/\n/go;
+transform PBDESC_liblintel_dev_doc = PBDESC_liblintel_dev_doc_raw s/\s+\n/\n/go;
+transform PBDESC_liblintel_dev = PBDESC_liblintel_dev_raw s/\s+\n/\n/go;
+transform PBDESC_liblintel_perl = PBDESC_liblintel_perl_raw s/\s+\n/\n/go;
