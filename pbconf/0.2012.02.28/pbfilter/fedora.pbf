@@ -21,3 +21,8 @@ filter PBSUF = %{dist}
 # PBOBS is replaced by the Obsolete line
 #filter PBOBS =
 
+filter PBNONSTANDARD = cmake, chrpath
+filter PBPERL = perl-devel,perl-DBD-MySQL,perl-Digest-HMAC,perl-BSD-Resource
+filter PBNETPBM = netpbm-progs
+filter PBOPENSSH = openssh-clients
+filter PBTEX = texlive-latex, texlive-dvips, ghostscript
