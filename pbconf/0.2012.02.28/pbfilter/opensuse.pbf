@@ -1,0 +1,5 @@
+filter PBNONSTANDARD = cmake, chrpath
+filter PBPERL = perl-DBD-mysql, perl-Data-ShowTable, perl-Digest-HMAC, perl-BSD-Resource
+filter PBNETPBM = netpbm
+filter PBOPENSSH = openssh
+filter PBTEX = texlive-latex, ghostscript-library

@@ -25,9 +25,6 @@ BuildRequires: PBTEX
 #if-fedora BuildRequires: perl-devel, netpbm-progs, openssh-clients, 
 #if-fedora BuildRequires: perl-DBD-MySQL, tetex-latex, tetex-dvips, ghostscript
 
-#if-opensuse BuildRequires: netpbm, openssh, perl-DBD-mysql, ghostscript-library, texlive-latex
-#if-opensuse BuildRequires: perl-Data-ShowTable, perl-Digest-HMAC, perl-BSD-Resource
-
 #if-scilinux BuildRequires: perl-devel, netpbm-progs, openssh-clients, perl-Time-HiRes
 #if-scilinux BuildRequires: perl-DBD-MySQL, tetex-latex, tetex-dvips, ghostscript
 
