@@ -9,3 +9,8 @@ filter PBDEBSTD = 3.8.3
 # PBDEBCOMP is replaced by the Debian Compatibility value
 filter PBDEBCOMP = 7
 
+filter PBBOOST = libboost-dev, libboost-thread-dev, libboost-program-options-dev
+# As of 10.04
+filter PBTEX = texlive-binaries
+# AS of 10.04, Digest::SHA is part of perl
+filter PB_LIBDIGEST_SHA_PERL = perl

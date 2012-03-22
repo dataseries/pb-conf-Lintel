@@ -1,20 +1,5 @@
-#
-# Project Builder configuration file
-# For project Lintel
-#
-# $Id$
-#
+# Project Builder configuration file for Lintel
 
-#
-# What is the project URL
-#
-#pburl Lintel = svn://svn.Lintel.org/Lintel/devel
-#pburl Lintel = svn://svn+ssh.Lintel.org/Lintel/devel
-#pburl Lintel = cvs://cvs.Lintel.org/Lintel/devel
-#pburl Lintel = http://www.Lintel.org/src/Lintel-devel.tar.gz
-#pburl Lintel = ftp://ftp.Lintel.org/src/Lintel-devel.tar.gz
-#pburl Lintel = file:///src/Lintel-devel.tar.gz
-#pburl Lintel = dir:///src/Lintel-devel
 pburl Lintel = file:///home/anderse/projects/Lintel-0.2012.02.28.tar.gz
 
 # Repository
@@ -82,7 +67,32 @@ vmlist Lintel = centos-5-i386
 # a .vetype extension will be added to the resulting string
 # a chroot rhel-3-i286 here means that the VE will be named rhel-3-i386.chroot
 #
-velist Lintel = centos-5-i386,centos-5-x86_64,centos-6-i386,centos-6-x86_64,debian-6.0-i386,debian-6.0-x86_64,debian-7.0-i386,debian-7.0-x86_64,fedora-15-i386,fedora-15-x86_64,fedora-16-i386,fedora-16-x86_64,opensuse-11.4-i386,opensuse-11.4-x86_64,opensuse-12.1-i386,opensuse-12.1-x86_64,ubuntu-8.04-i386,ubuntu-8.04-x86_64,ubuntu-11.10-i386,ubuntu-11.10-x86_64
+velist Lintel =                               \
+    centos-5.2-i386,centos-5.2-x86_64,        \
+    centos-5.3-i386,centos-5.3-x86_64,        \
+    centos-5.4-i386,centos-5.4-x86_64,        \
+    centos-5.5-i386,centos-5.5-x86_64,        \
+    centos-5.6-i386,centos-5.6-x86_64,        \
+    centos-5.7-i386,centos-5.7-x86_64,        \
+    centos-5.8-i386,centos-5.8-x86_64,        \
+    centos-6.0-i386,centos-6.0-x86_64,        \
+    centos-6.1-i386,centos-6.1-x86_64,        \
+    centos-6.2-i386,centos-6.2-x86_64,        \
+    debian-6.0-i386,debian-6.0-x86_64,        \
+    debian-7.0-i386,debian-7.0-x86_64,        \
+    fedora-15-i386,fedora-15-x86_64,          \
+    fedora-16-i386,fedora-16-x86_64,          \
+    opensuse-11.4-i386,opensuse-11.4-x86_64,  \
+    opensuse-12.1-i386,opensuse-12.1-x86_64,  \
+    scilinux-6.0-i386,scilinux-6.0-x86_64,    \
+    scilinux-6.1-i386,scilinux-6.1-x86_64,    \
+    scilinux-6.2-i386,scilinux-6.2-x86_64,    \
+    ubuntu-8.04-i386,ubuntu-8.04-x86_64,      \
+    ubuntu-10.04-i386,ubuntu-10.04-x86_64,    \
+    ubuntu-10.10-i386,ubuntu-10.10-x86_64,    \
+    ubuntu-11.04-i386,ubuntu-11.04-x86_64,    \
+    ubuntu-11.10-i386,ubuntu-11.10-x86_64,    \
+    ubuntu-12.04-i386,ubuntu-12.04-x86_64
 
 # VE params
 #vetype Lintel = chroot
@@ -92,7 +102,10 @@ velist Lintel = centos-5-i386,centos-5-x86_64,centos-6-i386,centos-6-x86_64,debi
 #rbsconf Lintel = /etc/mock
 #verebuild Lintel = false
 
-install_deps_hook ubuntu-8.04 = sudo apt-get -y --force-yes install texlive-latex-base; sudo perl -i.bak -ne 's/^(.ifnum.count..)65/${1}99/; print' /usr/share/texmf-texlive/tex/latex/base/latex.ltx; sudo dpkg --configure -a
+install_deps_hook ubuntu-8.04 = sudo apt-get -y --force-yes install texlive-latex-base; \
+     sudo perl -i.bak -ne 's/^(.ifnum.count..)65/${1}99/; print'                        \
+        /usr/share/texmf-texlive/tex/latex/base/latex.ltx;                              \
+     sudo dpkg --configure -a
 #
 # Global version/tag for the project
 #
@@ -112,8 +125,9 @@ testver Lintel = false
 delivery Lintel = production
 
 # Additional repository to add at build time
-addrepo centos-5-i386 = http://mirror.centos.org/centos/5/extras/i386/RPMS/chrpath-0.13-3.el5.centos.i386.rpm
-addrepo centos-5-x86_64 = http://mirror.centos.org/centos/5/extras/x86_64/RPMS/chrpath-0.13-3.el5.centos.x86_64.rpm
+addrepo centos-5.2 = http://dl.fedoraproject.org/pub/epel/5/$pbos->{'arch'}/cmake-2.6.4-5.el5.2.$pbos->{'arch'}.rpm,http://dl.fedoraproject.org/pub/epel/5/$pbos->{'arch'}/chrpath-0.13-1.1.el5.1.$pbos->{'arch'}.rpm
+# centos 5.7 got cmake as part of the os repo.
+addrepo centos-5.7 = http://dl.fedoraproject.org/pub/epel/5/$pbos->{'arch'}/chrpath-0.13-1.1.el5.1.$pbos->{'arch'}.rpm
 # addrepo centos-5-x86_64 = http://packages.sw.be/rpmforge-release/rpmforge-release-0.3.6-1.el5.rf.x86_64.rpm,ftp://ftp.project-builder.org/centos/5/pb.repo
 # addrepo centos-4-x86_64 = http://packages.sw.be/rpmforge-release/rpmforge-release-0.3.6-1.el4.rf.x86_64.rpm,ftp://ftp.project-builder.org/centos/4/pb.repo
 

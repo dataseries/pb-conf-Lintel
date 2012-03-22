@@ -1,4 +1,4 @@
-filter PBNONSTANDARD = cmake,chrpath,perl-Time-HiRes
+filter PBNONSTANDARD = cmake, chrpath
 filter PBPERL = perl-DBD-MySQL
 filter PBNETPBM = netpbm-progs
 filter PBOPENSSH = openssh-clients

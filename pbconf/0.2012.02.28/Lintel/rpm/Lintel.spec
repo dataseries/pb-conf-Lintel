@@ -13,20 +13,13 @@ License:        BSD
 Packager:	HPL SSD Software <software@cello.hpl.hp.com>
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires: boost-devel, doxygen, sg3_utils, gnuplot, perl-DBI, libxml2-devel, gcc-c++, libstdc++-devel
-
+BuildRequires: gcc-c++, libstdc++-devel
+BuildRequires: boost-devel, doxygen, sg3_utils, gnuplot, perl-DBI, libxml2-devel
 BuildRequires: PBNONSTANDARD
 BuildRequires: PBPERL
 BuildRequires: PBNETPBM
 BuildRequires: PBOPENSSH
 BuildRequires: PBTEX
-# see patch-spec.pl
-
-#if-fedora BuildRequires: perl-devel, netpbm-progs, openssh-clients, 
-#if-fedora BuildRequires: perl-DBD-MySQL, tetex-latex, tetex-dvips, ghostscript
-
-#if-scilinux BuildRequires: perl-devel, netpbm-progs, openssh-clients, perl-Time-HiRes
-#if-scilinux BuildRequires: perl-DBD-MySQL, tetex-latex, tetex-dvips, ghostscript
 
 # TODO-package-reviewer: do we split shared libraries as in debian?
 %package	libs

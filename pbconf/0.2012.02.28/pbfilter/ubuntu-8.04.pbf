@@ -9,6 +9,5 @@ filter PBDEBSTD = 3.7.3
 # PBDEBCOMP is replaced by the Debian Compatibility value
 filter PBDEBCOMP = 4
 
-filter PBBOOST = libboost-dev, libboost-thread-dev, libboost-program-options-dev
 filter PBTEX = texlive-base-bin
 filter PB_LIBDIGEST_SHA_PERL = libdigest-sha1-perl

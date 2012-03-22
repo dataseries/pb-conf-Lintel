@@ -1,6 +1,0 @@
-# chrpath comes from Lintel.pb as a manual install
-filter PBNONSTANDARD = cmake
-filter PBPERL = perl-DBD-MySQL
-filter PBNETPBM = netpbm-progs
-filter PBOPENSSH = openssh-clients
-filter PBTEX = tetex-latex, tetex-dvips, ghostscript
