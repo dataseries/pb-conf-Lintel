@@ -3,7 +3,8 @@
 pburl Lintel = file:///home/anderse/projects/Lintel-0.2012.02.28.tar.gz
 
 # Repository
-pbrepo Lintel = http://tesla.hpl.hp.com/opensource
+pbrepo Lintel = http://localhost/pb-pkgs
+pbdebcomponent Lintel = main
 #pbml Lintel = Lintel-announce@lists.Lintel.org
 #pbsmtp Lintel = localhost
 
