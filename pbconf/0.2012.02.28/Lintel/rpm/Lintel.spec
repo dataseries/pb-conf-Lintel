@@ -10,7 +10,7 @@ Release:        1
 Summary:        Support tools and library 
 Group:          Development/Libraries
 License:        BSD
-Packager:	HPL SSD Software <software@cello.hpl.hp.com>
+Packager:	Lintel-Users <lintel-users@lists.sourceforge.net>
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires: gcc-c++, libstdc++-devel
