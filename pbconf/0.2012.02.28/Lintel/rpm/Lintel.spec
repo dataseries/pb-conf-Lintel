@@ -131,7 +131,6 @@ strip $RPM_BUILD_ROOT/usr/lib*/libLintel*.so.*.*
 
 %clean
 rm -rf $RPM_BUILD_ROOT rpm-build
-./redhat/rules clean
 
 # rpmlint complains about libLintel calling exit(), but that's intentional; 
 # libLintel includes the equivalent of assert().

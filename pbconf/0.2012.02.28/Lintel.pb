@@ -1,6 +1,6 @@
 # Project Builder configuration file for Lintel
 
-pburl Lintel = file:///home/anderse/projects/Lintel-0.2012.02.28.tar.gz
+pburl Lintel = http://localhost/pb-sources/Lintel-0.2012.02.28.tar.gz
 
 # Repository
 pbrepo Lintel = http://localhost/pb-pkgs
@@ -152,6 +152,3 @@ defpkgdir Lintel = Lintel-0.2012.02.28
 # Here perl-xxx for RPMs, libxxx-perl for debs, ...
 # So the package name is indeed virtual
 #namingtype Lintel = perl
-
-sshhost Lintel = localhost
-sshdir Lintel = /home/anderse/cache-project-builder/repos
