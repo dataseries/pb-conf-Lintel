@@ -21,7 +21,7 @@ build-stamp:  debian/build/config-stamp
 	dh_testdir
 
 	(cd debian/build && $(MAKE) -j5)
-	#(cd debian/build && ctest)
+	(cd debian/build && ctest)
 
 	touch $@
 

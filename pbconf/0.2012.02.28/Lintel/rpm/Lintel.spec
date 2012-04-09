@@ -91,7 +91,7 @@ mkdir rpm-build
 cd rpm-build
 cmake -D CMAKE_INSTALL_PREFIX=/usr ..
 make -j 6
-#ctest
+ctest
 
 %install
 cd rpm-build
