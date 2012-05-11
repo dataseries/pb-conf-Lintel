@@ -144,7 +144,7 @@ rm -rf $RPM_BUILD_ROOT rpm-build
 %{_includedir}/Lintel/*
 %{_bindir}/lintel-config
 %{_libdir}/libLintel*.so
-/usr/share/cmake-modules
+/usr/share/cmake*/Modules
 /usr/share/packaging/redhat-rules
 /usr/share/lintel-latex-rebuild
 /usr/share/Lintel/doxygen.config.in

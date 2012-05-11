@@ -5,7 +5,7 @@ pburl Lintel = http://localhost/pb-sources/Lintel-0.2012.02.28.tar.gz
 # Repository
 pbrepo Lintel = http://localhost/pb-pkgs
 pbdebcomponent Lintel = main
-pbgpgcheck Lintel = 0
+pbgpgcheck Lintel = 1
 #pbml Lintel = Lintel-announce@lists.Lintel.org
 #pbsmtp Lintel = localhost
 
