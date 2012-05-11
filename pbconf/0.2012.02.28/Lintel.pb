@@ -1,4 +1,9 @@
 # Project Builder configuration file for Lintel
+#
+# (c) Copyright 2012, Hewlett-Packard Development Company, LP
+#
+#  See the file named COPYING for license details
+#
 
 pburl Lintel = http://localhost/pb-sources/Lintel-0.2012.02.28.tar.gz
 

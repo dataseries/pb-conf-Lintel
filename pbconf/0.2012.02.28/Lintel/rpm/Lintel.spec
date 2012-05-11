@@ -1,4 +1,9 @@
 #
+# (c) Copyright 2012, Hewlett-Packard Development Company, LP
+#
+#  See the file named COPYING for license details
+#
+#
 # SPEC file for Lintel
 #
 Name:           Lintel

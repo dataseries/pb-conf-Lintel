@@ -1,3 +1,8 @@
+# (c) Copyright 2012, Hewlett-Packard Development Company, LP
+#
+#  See the file named COPYING for license details
+#
+
 Source: lintel
 # http://www.debian.org/doc/debian-policy/ch-archive.html#s-subsections
 Section: PBGRP
