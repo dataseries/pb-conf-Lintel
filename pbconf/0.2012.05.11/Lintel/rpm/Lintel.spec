@@ -181,8 +181,8 @@ rm -rf $RPM_BUILD_ROOT rpm-build
 
 %changelog
 
-* Tue Feb 28 2012 anderse@hpl.hp.com 0.2012.02.28-1
-- release testing
+* Fri May 11 2012 eric.anderson12345+dataseries@gmail.com 0.2012.05.11-1
+- Release.  See NEWS for major changes.
 
 * Mon Jun 13 2011 anderse@hpl.hp.com 0.2011.06.13-1
 - Release.  See NEWS for major changes.

@@ -1,8 +1,8 @@
-lintel (0.2012.02.28) unstable; urgency=low
+lintel (0.2012.05.11) unstable; urgency=low
 
-  * Release testing
+  * Release.  See NEWS for major changes.
 
- -- Eric Anderson <anderse@hpl.hp.com>  Thu, 01 Mar 2012 14:47:54 -0800
+ -- Eric Anderson <eric.anderson12345+dataseries@gmail.com>  Fri, 11 May 2012 01:36:10 -0700
 
 lintel (0.2011.06.13) unstable; urgency=low
 

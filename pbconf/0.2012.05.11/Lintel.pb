@@ -5,7 +5,7 @@
 #  See the file named COPYING for license details
 #
 
-pburl Lintel = http://localhost/pb-sources/Lintel-0.2012.02.28.tar.gz
+pburl Lintel = http://localhost/pb-sources/Lintel-0.2012.05.11.tar.gz
 
 # Repository
 pbrepo Lintel = http://localhost/pb-pkgs
@@ -22,7 +22,7 @@ pbwf Lintel = 1
 #
 # Packager label
 #
-pbpackager Lintel = Eric Anderson <eric.anderson4@hp.com>
+pbpackager Lintel = Eric Anderson <eric.anderson12345+dataseries@gmail.com>
 #
 
 # For delivery to a machine by SSH (potentially the FTP server)
@@ -116,7 +116,7 @@ install_deps_hook ubuntu-8.04 = sudo apt-get -y --force-yes install texlive-late
 #
 # Global version/tag for the project
 #
-projver Lintel = 0.2012.02.28
+projver Lintel = 0.2012.05.11
 projtag Lintel = 1
 
 # Hash of valid version names
@@ -144,7 +144,7 @@ addrepo centos-5.7 = http://dl.fedoraproject.org/pub/epel/5/$pbos->{'arch'}/chrp
 #pkgver Lintel = stable
 #pkgtag Lintel = 3
 # Hash of default package/package directory
-defpkgdir Lintel = Lintel-0.2012.02.28
+defpkgdir Lintel = Lintel-0.2012.05.11
 # Hash of additional package/package directory
 #extpkgdir minor-pkg = dir-minor-pkg
 
